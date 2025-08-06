@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #1f3c88;
+    text-shadow: 2px 2px #ccc;
+}
+
+.events-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.event-card {
+    width: 90%;
+    max-width: 900px;
+    height: 400px;
+    background-image: var(--bg-img);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.event-card:hover {
+    animation: pulse 1.5s infinite;
+    transform: scale(1.02);
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 10px #ff6b6b; }
+    25% { box-shadow: 0 0 20px #feca57; }
+    50% { box-shadow: 0 0 30px #48dbfb; }
+    75% { box-shadow: 0 0 20px #1dd1a1; }
+    100% { box-shadow: 0 0 10px #ff6b6b; }
+}
+
+.event-content {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.event-content h2 {
+    font-size: 2rem;
+    margin: 0 0 10px;
+}
+
+.event-content a {
+    color: #fff;
+    background-color: #1f3c88;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.event-content a:hover {
+    background-color: #ff6b6b;
+}

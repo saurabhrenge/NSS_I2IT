@@ -1,0 +1,87 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and container setup */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Related Websites Section */
+.related-websites {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.websites-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+/* Website Item (Card) */
+.website-item {
+  width: 100%;
+  width: 900px;
+  border: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.website-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(166, 196, 14, 0.932);
+}
+
+.website-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+.website-item h3 {
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .website-item {
+    max-width: 100%;
+  }
+}
